@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tierra Alta - Comunidad</title>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a Tierra Alta - Comunidad</h1>
+    <nav>
+        <ul>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#registro">Registro</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="eventos">
+    <h2>Próximos Eventos</h2>
+    <ul>
+        <li>
+            <h3>Festival de la Luna Llena</h3>
+            <p><strong>Fecha:</strong> 25 de febrero de 2024</p>
+            <p><strong>Lugar:</strong> Plaza Central</p>
+            <p><strong>Descripción:</strong> Únete a nosotros para celebrar la llegada de la luna llena con música en vivo, bailes y comida local.</p>
+        </li>
+        <!-- Agrega más eventos según sea necesario -->
+    </ul>
+</section>
+
+<section id="registro">
+    <h2>Registro de Nuevos Integrantes</h2>
+    <form action="procesar_registro.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br>
+
+        <label for="intereses">Intereses:</label><br>
+        <textarea id="intereses" name="intereses" rows="4" cols="50" required></textarea><br>
+
+        <button type="submit">Registrarse</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Tierra Alta - Comunidad. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
