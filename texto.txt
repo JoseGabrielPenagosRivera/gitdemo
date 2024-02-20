@@ -4,3 +4,6 @@ segundo cambio de prueba para el merge
 cambio jineth
 cambio jineth2
 
+cambio yhania
+cambio yhania2
+cambio conflicto1
