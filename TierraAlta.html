@@ -1,19 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tierra Alta - Comunidad</title>
-    <script>
-        alert("Bienvenido");
+    <title>Tierra Alta </title>
+    <script src="js/prueba.js"></script>
 
-    </script>
-
+<title>Notification Bell</title>
+<style>
+    .notification-bell {
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+        cursor: pointer;
+    }
+    
+    .notification-icon {
+        width: 30px;
+        height: 30px;
+        background-color: #ddd;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    .notification-badge {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background-color: red;
+        color: white;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .notification-menu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .notification-menu-item {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        color: #333;
+    }
+    
+    .notification-menu-item:hover {
+        background-color: #ddd;
+    }
+</style>
 </head>
 <body>
 
+<div class="notification-bell" onclick="toggleNotificationMenu()">
+    <div class="notification-icon">
+        <span class="icon">🔔</span>
+        <span class="notification-badge" id="notificationBadge">3</span>
+    </div>
+    <div class="notification-menu" id="notificationMenu">
+        <a href="#" class="notification-menu-item">Notification 1</a>
+        <a href="#" class="notification-menu-item">Notification 2</a>
+        <a href="#" class="notification-menu-item">Notification 3</a>
+    </div>
+</div>
+
+<script>
+    function toggleNotificationMenu() {
+        var menu = document.getElementById("notificationMenu");
+        menu.style.display === "none" ? menu.style.display = "block" : menu.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
+
 <header>
-    <h1>Bienvenido a Tierra Alta - Comunidad</h1>
+    <h1>Bienvenido a Tierra Alta</h1>
+
+    
+
     <nav>
         <ul>
             <li><a href="#eventos">Eventos</a></li>
